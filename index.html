@@ -1,147 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>MASTER TEC | Soporte Técnico</title>
-
+  <title>MASTER TEC | Soporte Técnico Profesional</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
+  <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    html {
-      scroll-behavior: smooth;
+    html { scroll-behavior: smooth; }
+    .glass { background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(12px); }
+    .img-gradient { position: relative; }
+    .img-gradient::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.8), transparent);
     }
   </style>
 </head>
 
-<body class="bg-slate-950 text-white">
+<body class="bg-slate-950 text-white font-sans">
 
-<header class="sticky top-0 bg-slate-950 border-b border-slate-800 z-50">
+<!-- Navegación -->
+<header class="sticky top-0 glass border-b border-slate-800 z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
     <div>
-      <h1 class="text-2xl font-bold">MASTER TEC</h1>
-      <p class="text-slate-400 text-sm">Soporte Técnico Profesional</p>
+      <h1 class="text-2xl font-black tracking-tighter text-cyan-500">MASTER TEC</h1>
+      <p class="text-slate-400 text-xs uppercase tracking-widest font-semibold">Guadalajara, MX</p>
     </div>
-
-    <a
-      href="https://wa.me/5210000000000"
-      class="bg-cyan-500 hover:bg-cyan-400 text-black px-5 py-3 rounded-xl font-semibold"
-    >
+    <a href="https://wa.me/5210000000000" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-5 py-2.5 rounded-full font-bold transition-all flex items-center gap-2">
+      <i data-lucide="message-circle" class="w-5 h-5"></i>
       WhatsApp
     </a>
-
   </div>
 </header>
 
-<section class="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
-
-  <div>
-
-    <span class="bg-cyan-500/10 text-cyan-400 px-4 py-2 rounded-full text-sm">
-      Reparación y Soporte Técnico en Guadalajara
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 py-16 lg:py-28 grid lg:grid-cols-2 gap-16 items-center">
+  <div class="space-y-8">
+    <span class="inline-block bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-4 py-1.5 rounded-full text-sm font-medium">
+      Servicio Técnico Autorizado
     </span>
-
-    <h2 class="text-5xl md:text-6xl font-black mt-6 mb-6 leading-tight">
-      Soluciones rápidas para tu computadora
+    <h2 class="text-6xl md:text-7xl font-extrabold leading-[1.1] tracking-tight">
+      Tu PC, como <span class="text-cyan-500">nueva</span> otra vez.
     </h2>
-
-    <p class="text-slate-300 text-lg leading-relaxed mb-8">
-      Especialistas en reparación, mantenimiento y optimización de laptops y PCs.
+    <p class="text-slate-400 text-xl leading-relaxed max-w-lg">
+      Especialistas en diagnóstico y reparación. No dejes tu equipo en manos de cualquiera.
     </p>
-
-    <div class="flex gap-4 flex-wrap">
-
-      <a
-        href="https://wa.me/5210000000000"
-        class="bg-cyan-500 hover:bg-cyan-400 text-black px-6 py-4 rounded-2xl font-bold"
-      >
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="https://wa.me/5210000000000" class="bg-cyan-500 text-slate-950 px-8 py-4 rounded-2xl font-bold text-center hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/20">
         Solicitar Diagnóstico
       </a>
-
-      <a
-        href="#servicios"
-        class="border border-slate-700 hover:border-cyan-400 px-6 py-4 rounded-2xl"
-      >
+      <a href="#servicios" class="border border-slate-700 hover:border-slate-500 px-8 py-4 rounded-2xl font-bold text-center transition-all">
         Ver Servicios
       </a>
-
-    </div>
-
-  </div>
-
-  <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8">
-    <div class="aspect-video bg-slate-800 rounded-2xl flex items-center justify-center text-slate-500 text-center">
-      Aquí puedes poner una foto real
     </div>
   </div>
 
+  <!-- Imagen Principal (Taller/Hardware) -->
+  <div class="relative group">
+    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+    <div class="relative bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden aspect-video shadow-2xl">
+      <img 
+        src="https://images.unsplash.com/photo-1591405351990-4726e331f141?auto=format&fit=crop&q=80&w=1000" 
+        alt="Reparación de computadora" 
+        class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-700"
+      >
+    </div>
+  </div>
 </section>
 
-<section id="servicios" class="bg-slate-900/60 py-24 border-y border-slate-800">
-
+<!-- Sección de Servicios -->
+<section id="servicios" class="bg-slate-900/30 py-24 border-y border-slate-800">
   <div class="max-w-7xl mx-auto px-6">
-
     <div class="text-center mb-16">
-      <h3 class="text-4xl font-bold mb-4">Servicios</h3>
-      <p class="text-slate-400">
-        Soluciones profesionales para laptops y PCs.
-      </p>
+      <h3 class="text-4xl font-bold mb-4 italic uppercase tracking-tighter">Servicios Especializados</h3>
+      <p class="text-slate-400 max-w-2xl mx-auto">Soluciones rápidas con refacciones de alta calidad.</p>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6">
-
-      <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6">
-        <h4 class="text-xl font-bold mb-4">Mantenimiento</h4>
-        <p class="text-slate-400">
-          Limpieza interna y optimización.
-        </p>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Mantenimiento -->
+      <div class="group bg-slate-950 border border-slate-800 rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80&w=800" alt="Limpieza PC" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+        </div>
+        <div class="p-8">
+          <div class="w-10 h-10 bg-cyan-500/10 rounded-lg flex items-center justify-center text-cyan-400 mb-4">
+            <i data-lucide="wrench"></i>
+          </div>
+          <h4 class="text-2xl font-bold mb-3">Mantenimiento</h4>
+          <p class="text-slate-400 text-sm leading-relaxed">Limpieza física profunda, cambio de pasta térmica y optimización de ventilación.</p>
+        </div>
       </div>
 
-      <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6">
-        <h4 class="text-xl font-bold mb-4">Software</h4>
-        <p class="text-slate-400">
-          Windows, Office, drivers y antivirus.
-        </p>
+      <!-- Hardware -->
+      <div class="group bg-slate-950 border border-slate-800 rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1544006659-f0b21884cb1d?auto=format&fit=crop&q=80&w=800" alt="Hardware" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+        </div>
+        <div class="p-8">
+          <div class="w-10 h-10 bg-cyan-500/10 rounded-lg flex items-center justify-center text-cyan-400 mb-4">
+            <i data-lucide="cpu"></i>
+          </div>
+          <h4 class="text-2xl font-bold mb-3">Hardware</h4>
+          <p class="text-slate-400 text-sm leading-relaxed">Instalación de SSD, ampliación de RAM, reparación de bisagras y pantallas.</p>
+        </div>
       </div>
 
-      <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6">
-        <h4 class="text-xl font-bold mb-4">Hardware</h4>
-        <p class="text-slate-400">
-          SSD, RAM, pantallas y componentes.
-        </p>
+      <!-- Software -->
+      <div class="group bg-slate-950 border border-slate-800 rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" alt="Software" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+        </div>
+        <div class="p-8">
+          <div class="w-10 h-10 bg-cyan-500/10 rounded-lg flex items-center justify-center text-cyan-400 mb-4">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <h4 class="text-2xl font-bold mb-3">Software</h4>
+          <p class="text-slate-400 text-sm leading-relaxed">Instalación de Windows, Office, eliminación de virus y recuperación de datos.</p>
+        </div>
       </div>
-
     </div>
-
   </div>
-
 </section>
 
-<section class="text-center px-6 py-24">
-
-  <h3 class="text-5xl font-black mb-6">
-    ¿Necesitas ayuda con tu computadora?
-  </h3>
-
-  <p class="text-slate-400 text-lg mb-10">
-    Atención rápida y soporte profesional.
-  </p>
-
-  <a
-    href="https://wa.me/5210000000000"
-    class="bg-cyan-500 hover:bg-cyan-400 text-black px-8 py-5 rounded-2xl text-lg font-bold"
-  >
-    Contactar por WhatsApp
+<!-- Footer y CTA final -->
+<section class="max-w-4xl mx-auto text-center px-6 py-32">
+  <h3 class="text-5xl font-black mb-8 italic">¿Tu equipo está lento?</h3>
+  <a href="https://wa.me/5210000000000" class="inline-flex items-center gap-3 bg-white text-slate-950 px-10 py-5 rounded-2xl text-xl font-bold hover:bg-cyan-400 transition-all">
+    <i data-lucide="zap"></i>
+    Arréglalo Hoy Mismo
   </a>
-
 </section>
 
-<footer class="border-t border-slate-800 py-8 text-center text-slate-500">
-  © 2026 MASTER TEC · Guadalajara
+<footer class="border-t border-slate-900 py-12 text-center">
+  <p class="text-slate-500 text-sm">© 2026 MASTER TEC · Guadalajara, Jalisco.</p>
 </footer>
+
+<script>
+  lucide.createIcons();
+</script>
 
 </body>
 </html>
