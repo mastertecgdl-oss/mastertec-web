@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <title>MASTER TEC | Soporte Técnico Guadalajara</title>
-  <meta name="description" content="Reparación y mantenimiento de laptops y PCs en Guadalajara. Servicio profesional, rápido y honesto.">
+  <meta name="description" content="Reparación, mantenimiento y optimización de laptops y PCs en Guadalajara. Servicio profesional, rápido y honesto.">
+  <meta name="keywords" content="reparación computadoras, soporte técnico guadalajara, laptop, pc, master tec">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -26,52 +28,58 @@
       background-color: #ea580c;
       transform: translateY(-2px);
     }
+    .text-glow {
+      text-shadow: 0 0 20px rgba(249, 115, 22, 0.2);
+    }
   </style>
 </head>
 
 <body class="bg-slate-50 text-slate-800 font-sans bg-dots">
 
-<header class="sticky top-0 bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
+<header class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-slate-200 z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="flex items-center gap-2">
-      <img src="favicon.png" alt="MASTER TEC Logo" class="w-8 h-8 object-contain">
+    <div class="flex items-center gap-3">
+      <img src="favicon.ico" alt="MASTER TEC" class="w-10 h-10 object-contain shadow-sm rounded-lg p-1 bg-white border border-slate-100">
       <div>
-        <h1 class="text-xl font-bold tracking-tight text-slate-900 leading-none uppercase">MASTER TEC</h1>
+        <h1 class="text-xl font-black tracking-tighter text-slate-900 leading-none">MASTER TEC</h1>
         <p class="text-[10px] text-orange-600 font-bold uppercase tracking-widest">Guadalajara</p>
       </div>
     </div>
     
-    <a href="https://wa.me/523331500614" target="_blank" class="btn-orange text-white px-5 py-2.5 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-orange-500/20">
+    <a href="https://wa.me/523331500614" target="_blank" class="btn-orange text-white px-5 py-2.5 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-orange-500/20 active:scale-95">
       <i data-lucide="message-circle" class="w-5 h-5"></i>
-      <span>WhatsApp</span>
+      <span class="hidden sm:inline">WhatsApp</span>
     </a>
   </div>
 </header>
 
 <section class="max-w-7xl mx-auto px-6 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
-  <div class="space-y-6">
-    <h2 class="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
-      Reparamos tu equipo con <span class="text-orange-500 underline decoration-slate-200">honestidad</span> y rapidez.
+  <div class="space-y-8 text-center lg:text-left">
+    <span class="inline-block bg-orange-100 text-orange-700 px-4 py-1.5 rounded-full text-sm font-bold tracking-wide uppercase">
+      Servicio Técnico Profesional
+    </span>
+    <h2 class="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight">
+      Tu PC, lista para el <span class="text-orange-500 text-glow">trabajo</span>.
     </h2>
-    <p class="text-lg text-slate-600 leading-relaxed max-w-lg">
-      Especialistas en mantenimiento y reparación de computadoras en Guadalajara. Tu herramienta de trabajo en las mejores manos.
+    <p class="text-lg text-slate-600 leading-relaxed max-w-lg mx-auto lg:mx-0 font-medium">
+      Especialistas en mantenimiento y reparación en Guadalajara. Rapidez, honestidad y garantía en cada servicio.
     </p>
-    <div class="flex flex-wrap gap-4">
+    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
       <a href="https://wa.me/523331500614" target="_blank" class="btn-orange text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-orange-500/30">
-        Cotizar ahora
+        Solicitar Diagnóstico
       </a>
-      <a href="#servicios" class="bg-white border border-slate-200 text-slate-700 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-slate-50 transition-colors">
-        Nuestros servicios
+      <a href="#servicios" class="bg-white border border-slate-200 text-slate-700 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-slate-50 transition-all">
+        Nuestros Servicios
       </a>
     </div>
   </div>
 
   <div class="relative">
-    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-orange-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-50"></div>
+    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-[12px] border-white">
       <img 
         src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1000" 
-        alt="Soporte Técnico MASTER TEC" 
+        alt="Soporte Técnico" 
         class="w-full h-full object-cover"
       >
     </div>
@@ -79,39 +87,34 @@
 </section>
 
 <section id="servicios" class="max-w-7xl mx-auto px-6 py-20">
-  <div class="text-center mb-16">
-    <h3 class="text-3xl font-bold text-slate-900 mb-4 tracking-tight uppercase italic">Soluciones para ti</h3>
-    <div class="h-1.5 w-16 bg-orange-500 mx-auto rounded-full"></div>
-  </div>
-
   <div class="grid md:grid-cols-3 gap-8">
-    <div class="bg-white p-2 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
+    <div class="bg-white p-3 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
       <div class="h-48 rounded-2xl overflow-hidden mb-6">
-        <img src="https://images.unsplash.com/photo-1588702547919-26089e690ecc?auto=format&fit=crop&q=80&w=800" alt="Mantenimiento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <img src="https://images.unsplash.com/photo-1588702547919-26089e690ecc?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
       </div>
-      <div class="px-6 pb-6">
-        <h4 class="text-xl font-bold text-slate-900 mb-2 italic">Limpieza Técnica</h4>
-        <p class="text-slate-600 text-sm">Eliminación de polvo, cambio de pasta térmica y optimización para evitar sobrecalentamiento.</p>
+      <div class="px-4 pb-6">
+        <h4 class="text-xl font-bold text-slate-900 mb-2 italic uppercase tracking-tighter">Mantenimiento</h4>
+        <p class="text-slate-600 text-sm">Limpieza profunda, cambio de pasta térmica y optimización de sistema.</p>
       </div>
     </div>
 
-    <div class="bg-white p-2 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
+    <div class="bg-white p-3 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
       <div class="h-48 rounded-2xl overflow-hidden mb-6">
-        <img src="https://images.unsplash.com/photo-1591405351990-4726e331f141?auto=format&fit=crop&q=80&w=800" alt="Hardware" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <img src="https://images.unsplash.com/photo-1591405351990-4726e331f141?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
       </div>
-      <div class="px-6 pb-6">
-        <h4 class="text-xl font-bold text-slate-900 mb-2 italic">Actualizaciones</h4>
-        <p class="text-slate-600 text-sm">Instalación de discos SSD y memoria RAM para que tu equipo vuele en segundos.</p>
+      <div class="px-4 pb-6">
+        <h4 class="text-xl font-bold text-slate-900 mb-2 italic uppercase tracking-tighter">Hardware</h4>
+        <p class="text-slate-600 text-sm">Mejora de velocidad con SSD, aumento de RAM y reparación de componentes.</p>
       </div>
     </div>
 
-    <div class="bg-white p-2 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
+    <div class="bg-white p-3 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
       <div class="h-48 rounded-2xl overflow-hidden mb-6">
-        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=800" alt="Software" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
       </div>
-      <div class="px-6 pb-6">
-        <h4 class="text-xl font-bold text-slate-900 mb-2 italic">Software y Virus</h4>
-        <p class="text-slate-600 text-sm">Formateo, instalación de Windows oficial, Office y eliminación de amenazas.</p>
+      <div class="px-4 pb-6">
+        <h4 class="text-xl font-bold text-slate-900 mb-2 italic uppercase tracking-tighter">Software</h4>
+        <p class="text-slate-600 text-sm">Formateo, instalación de programas y eliminación definitiva de virus.</p>
       </div>
     </div>
   </div>
@@ -119,17 +122,18 @@
 
 <footer class="bg-slate-900 py-16 px-6 text-center">
   <div class="max-w-4xl mx-auto">
-    <img src="favicon.png" alt="MASTER TEC" class="w-12 h-12 mx-auto mb-4 grayscale invert brightness-0 opacity-50">
-    <h3 class="text-white text-2xl font-bold mb-4">MASTER TEC</h3>
-    <p class="text-slate-400 mb-8 font-medium">Atención directa en Guadalajara · 33 3150 0614</p>
-    <a href="https://wa.me/523331500614" target="_blank" class="btn-orange text-white px-10 py-4 rounded-2xl text-xl font-black inline-block">
-      Chatear en WhatsApp
+    <img src="favicon.ico" alt="MASTER TEC" class="w-16 h-16 mx-auto mb-6 bg-white p-2 rounded-2xl shadow-lg border border-slate-700">
+    <h3 class="text-white text-2xl font-bold mb-4 uppercase tracking-widest">MASTER TEC</h3>
+    <p class="text-slate-400 mb-8 font-medium italic">Atención personalizada en Guadalajara · 33 3150 0614</p>
+    <a href="https://wa.me/523331500614" target="_blank" class="btn-orange text-white px-10 py-4 rounded-2xl text-xl font-black inline-block shadow-2xl shadow-orange-500/40 active:scale-95 transition-transform">
+      Enviar WhatsApp
     </a>
-    <p class="mt-12 text-slate-600 text-xs tracking-[0.3em] uppercase">© 2026 Calidad · Confianza · Rapidez</p>
+    <p class="mt-12 text-slate-600 text-[10px] tracking-[0.4em] uppercase font-bold">© 2026 Guadalajara · Jalisco</p>
   </div>
 </footer>
 
 <script>
+  // Inicialización de iconos Lucide
   lucide.createIcons();
 </script>
 
