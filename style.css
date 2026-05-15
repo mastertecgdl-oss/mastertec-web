@@ -1,0 +1,35 @@
+/* Configuración General */
+html { 
+  scroll-behavior: smooth; 
+}
+
+.bg-dots {
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Botones */
+.btn-orange {
+  background-color: #f97316;
+  transition: all 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #ea580c;
+  transform: translateY(-2px);
+}
+
+/* Efectos de Texto */
+.text-glow {
+  text-shadow: 0 0 20px rgba(249, 115, 22, 0.2);
+}
+
+/* Ajustes de Mapa */
+iframe {
+  filter: grayscale(0.2);
+  transition: filter 0.5s ease;
+}
+
+iframe:hover {
+  filter: grayscale(0);
+}
